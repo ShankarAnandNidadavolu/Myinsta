@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Post"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="17sp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/post_preview"
+        android:scaleType="centerInside"
+        android:src="@drawable/newpostbackground"
+        android:background="@drawable/newpostbackground1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="20sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:padding="12sp"
+            android:background="@null"
+            android:id="@+id/post_description"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/loginbutton_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Upload Post"
+        android:textColor="@color/white"
+        android:id="@+id/post_uploadbutton"/>
+        
+</LinearLayout>

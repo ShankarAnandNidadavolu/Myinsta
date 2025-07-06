@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChattingActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20sp"
+        android:orientation="horizontal"
+        android:id="@+id/chatting_profile"
+        android:background="@drawable/edittext_background2">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:padding="8sp"
+            android:layout_marginLeft="10sp"
+
+            android:id="@+id/chattingprofilephoto"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:id="@+id/chattingusername"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:id="@+id/chattingrecyclerview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/messagebar_background"
+        android:layout_marginBottom="10sp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@null"
+            android:id="@+id/chattingmessagebox"/>
+        <ImageButton
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/send_button"
+            android:scaleType="centerInside"
+            android:backgroundTint="@color/transparent"
+            android:layout_weight="6"
+            android:id="@+id/chattingsendbutton"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

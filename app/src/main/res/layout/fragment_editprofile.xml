@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+
+
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="17sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:layout_marginTop="-7sp"
+            android:id="@+id/editprofile_savebutton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="25sp"
+        android:paddingBottom="20sp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editprofile_profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_default_profile" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editprofile_btnSelectImage"
+            android:layout_width="100dp"
+            android:layout_height="30sp"
+            android:text="Select Image"
+            android:textSize="10dp"
+            android:textColor="#7A7A7A"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="17dp"/>
+
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                android:textSize="15dp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:id="@+id/editprofile_bioedittext"
+                android:layout_weight="1"
+                android:paddingLeft="15sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp">
+
+            <EditText
+                android:id="@+id/editprofile_currentpasswordedittext"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Current Password *"
+                android:inputType="textPassword"
+                android:paddingLeft="15sp"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/visibility_off_24px"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10sp"
+                android:id="@+id/editprofile_curentpasswordeye"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:layout_gravity="center">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Password"
+                android:textSize="15dp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:id="@+id/editprofile_newpasswordedittext"
+                android:layout_weight="1"
+                android:paddingLeft="15sp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/visibility_off_24px"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10sp"
+                android:id="@+id/editprofile_newpasswordeye"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
