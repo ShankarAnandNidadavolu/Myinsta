@@ -77,9 +77,9 @@ public class Register extends AppCompatActivity {
         signup.setOnClickListener(v->uploaduserdata());
 
         Map<String, String> config = new HashMap<>();
-        config.put("cloud_name", "dbtawwewz");
-        config.put("api_key", "924678211336546");
-        config.put("api_secret", "7BRDNLQ2o9j4O9Obr0jXAtUuuPw");
+        config.put("cloud_name", "");
+        config.put("api_key", "");
+        config.put("api_secret", "");
 
         try {
             MediaManager.init(this, config);
