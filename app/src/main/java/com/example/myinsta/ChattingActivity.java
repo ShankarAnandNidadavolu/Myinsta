@@ -185,7 +185,7 @@ public class ChattingActivity extends AppCompatActivity {
         );
 
         Request request = new Request.Builder()
-                .url("https://fcm-server-tw9j.onrender.com/send-notification")
+                .url("")
                 .post(body)
                 .build();
 
